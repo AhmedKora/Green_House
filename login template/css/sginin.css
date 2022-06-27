@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #000;
+}
+.flex {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 30px;
+  align-items: center;
+}
+.flex .img {
+  background-image: url(../img/signin.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+}
+.flex .img::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.363);
+  z-index: -1;
+}
+@media (max-width: 884px) {
+  .flex .img {
+    height: 39vh;
+  }
+  .close {
+    z-index: 999;
+    color: #fff;
+  }
+}
+.flex .img .txt {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+.flex .img .txt h2 {
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: var(--color_FFF);
+}
+.flex .img .txt p {
+  font-size: 18px;
+  color: var(--color_FFF);
+}
+form {
+  padding-right: 15px;
+}
+form h2,
+form p {
+  text-align: center;
+}
+form p:nth-child(1) {
+  font-size: 40px;
+  font-family: "Dancing Script", cursive;
+}
+form h2 {
+  margin: 10px 0px;
+  font-size: 40px;
+  font-weight: 500;
+}
+form p:nth-child(3) a {
+  display: inline-block;
+  color: #767676;
+  border-bottom: 1px solid #767676;
+  margin-bottom: 20px;
+}
+form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px 30px;
+  background-color: #eee;
+  border: none;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+form input:focus {
+  outline: none;
+  border: 1px solid #000;
+}
+form .btn {
+  width: 100%;
+  background-color: #000;
+  border: none;
+  padding: 12px 30px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+form .btn:hover {
+  transform: translateY(-5px);
+}

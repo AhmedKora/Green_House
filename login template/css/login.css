@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: var(--color__000);
+}
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  form {
+    width: 90%;
+  }
+}
+form h2:first-child {
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  line-height: 1;
+}
+form h3:nth-child(2) {
+  font-size: 25px;
+  margin: 0px;
+}
+form h3:nth-child(3) {
+  margin: 5px 0px;
+}
+form input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 13px;
+  transition: all 0.3s linear;
+  background-color: #eee;
+  border: 1px solid transparent;
+  display: block;
+}
+form input:focus {
+  outline: none;
+  border: 1px solid var(--color__000);
+}
+form button {
+  width: 100%;
+  padding: 12px 0px;
+  background-color: none;
+  border: none;
+  background-color: var(--color__000);
+  /* background-color: var(--main_color); */
+  color: var(--color__FFF);
+  font-size: 18px;
+  /* margin-top: 10px; */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+form button:hover {
+  transform: translateY(-2px);
+}
+form p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  color: var(--color__000);
+}
+form a {
+  color: #767676;
+  border-bottom: 1px solid #767676;
+}
